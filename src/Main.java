@@ -4,13 +4,15 @@ public class Main {
     public static void main(String[] args) {
         int suma = 0;
         int max = 100;
+        int min = 1;
+        int djelitelj = 2;
 
-        for (int i = 1; i <= max; i++) {
-            if ((i & 1) == 0) {
+        for (int i = min; i <= max; i++) {
+            if (i % djelitelj == 0) {
                 suma += i;
             }
         }
         System.out.println();
-        System.out.printf("Suma parnih brojeva od 1 do %d je = %d\n", max, suma);
+        System.out.printf("Suma brojeva djeljivih s %d od %d do %d je = %d\n", djelitelj, min, max, suma);
     }
 }
