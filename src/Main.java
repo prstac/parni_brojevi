@@ -8,7 +8,7 @@ public class Main {
         for (int i = 1; i <= max; i++) {
             if ((i & 1) == 0) {
                 suma += i;
-            };
+            }
         }
         System.out.println();
         System.out.printf("Suma parnih brojeva od 1 do %d je = %d\n", max, suma);
